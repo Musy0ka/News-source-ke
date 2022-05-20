@@ -34,6 +34,7 @@ def home ():
     url.append(main_article['url'])
 
     contents = zip(news,desc,img,p_date,url)
+    all = zip(news_all,desc_all,img_all,p_date_all,url_all)
 
   return render_template('home.html', contents=contents)
 
