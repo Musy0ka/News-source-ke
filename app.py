@@ -26,12 +26,18 @@ def home ():
   for i in range(len(t_articles)):
     main_article = t_articles[i]
 
-    #append all the contents in to each of lists
+
     news.append(main_article['title'])
     desc.append(main_article['description'])
     img.append(main_article['urlToImage'])
     p_date.append(main_article['publishedAt'])
     url.append(main_article['url'])
+
+  news_all = []
+  desc_all = []
+  img_all = []
+  p_date_all = []
+  url_all = []
 
     contents = zip(news,desc,img,p_date,url)
     all = zip(news_all,desc_all,img_all,p_date_all,url_all)
