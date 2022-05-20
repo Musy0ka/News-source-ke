@@ -15,6 +15,8 @@ def home ():
 
   t_articles = top_headlines['articles']
 
+  a_articles = all_articles['articles']
+
   news = []
   desc = []
   img = []
