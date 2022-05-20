@@ -29,7 +29,9 @@ def home ():
     p_date.append(main_article['publishedAt'])
     url.append(main_article['url'])
 
-  return render_template('home.html')
+    contents = zip(news,desc,img,p_date,url)
+
+  return render_template('home.html', contents=contents)
 
 if __name__ == '__main__':
   app.run(debug=True)
