@@ -11,6 +11,8 @@ def home ():
 
   top_headlines = newsapi.get_top_headlines(sources = 'bbc-news')
 
+  all_articles = newsapi.get_everything(sources='bbc-news')
+
   t_articles = top_headlines['articles']
 
   news = []
